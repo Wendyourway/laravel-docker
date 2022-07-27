@@ -42,7 +42,6 @@ RUN apt-get install -y \
         php8.1-msgpack \
         php8.1-igbinary \
         php8.1-redis \
-        php8.1-swoole \
         php8.1-memcached \
         php8.1-pcov \
         php8.1-xdebug
