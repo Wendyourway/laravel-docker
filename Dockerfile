@@ -52,6 +52,7 @@ RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
 COPY ./php/php.ini /etc/php/8.2/cli/conf.d/99-sail.ini
 COPY ./php/xdebug.ini /etc/php/8.2/mods-available/xdebug.ini
 COPY ./supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY start-container /usr/local/bin/start-container
 RUN chmod +x /usr/local/bin/start-container
 
 EXPOSE 80
